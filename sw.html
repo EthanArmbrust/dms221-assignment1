@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+table,th,td {
+    border: 1px solid black;
+}
+</style>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <div id="header">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Archlinux-icon-crystal-64.svg/200px-Archlinux-icon-crystal-64.svg.png">
+            <ul id="menu">
+                <li>Installation</li>
+                <li>Updating</li>
+                <li>Desktop Environments</li>
+                
+            </ul>
+        </div>
+        <div id="body">
+            <h2 id="installation">Installation</h2>
+            <p>First, wipe disk and parition to ext4 with <code>fdisk</code>. Then mount the partition on <code>/mnt</code> and use <code>pacstrap</code> to install the operating system. Use <code>arch-chroot</code> to change the root directory to <code>/mnt</code>. Set a root password with <code>passwd</code>, then install GRUB with <code>grub-install</code>. Don't forget to generate a GRUB config file.</p>
+            <p>Video Tutorial</p>
+            <video controls width=320 src="Arch_small_install.mp4"> </video>
+            <h2>Desktop Environments</h2>
+            <h3>KDE Plasma</h3>
+            <p>KDE is built on the Qt Framework, rather than the more typical GTK framework. Applications of note:
+            <table>
+                <thead>
+                    <tr>
+                        <td>Application</td>
+                        <td>Use</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Dolphin</td>
+                        <td>File manager</td>
+                    </tr>
+                    <tr>
+                        <td>Konsole</td>
+                        <td>Terminal emulator</td>
+                    </tr>
+                    <tr>
+                        <td>Krita</td>
+                        <td>Digital painting</td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            <img src="https://149366088.v2.pressablecdn.com/wp-content/uploads/2019/06/plasma-5.16-desktop-screenshot.jpg" width=480>
+            <p>A screenshot of Plasma</p>
+            <h3>GNOME 3</h3>
+            <p>Gnome is maintained by the GNU Foundation. It is GTK based and the default desktop environment on many different Linux distrobutions<p>
+    </body>
+    
+
+</html>
