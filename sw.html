@@ -2,7 +2,7 @@
 <html>
 
 <style>
-table,th,td {
+table,td {
     border: 1px solid black;
 }
 </style>
@@ -12,10 +12,11 @@ table,th,td {
     <body>
         <div id="header">
             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Archlinux-icon-crystal-64.svg/200px-Archlinux-icon-crystal-64.svg.png">
+            <h1>Guide to Arch Linux</h1>
             <ul id="menu">
-                <li>Installation</li>
-                <li>Updating</li>
-                <li>Desktop Environments</li>
+                <li><a href='#installation'>Installation</a></li>
+                <li><a href='#updating'>Updating</a></li>
+                <li><a href='#de'>Desktop Environments</a></li>
                 
             </ul>
         </div>
@@ -24,7 +25,10 @@ table,th,td {
             <p>First, wipe disk and parition to ext4 with <code>fdisk</code>. Then mount the partition on <code>/mnt</code> and use <code>pacstrap</code> to install the operating system. Use <code>arch-chroot</code> to change the root directory to <code>/mnt</code>. Set a root password with <code>passwd</code>, then install GRUB with <code>grub-install</code>. Don't forget to generate a GRUB config file.</p>
             <p>Video Tutorial</p>
             <video controls width=320 src="Arch_small_install.mp4"> </video>
-            <h2>Desktop Environments</h2>
+            <h2 id="updating">Updating</h2>
+            <p>Arch Linux uses a rolling release system. Instead of freezing packages and releasing a big version of the operating system, Arch always offers the latest packages available. While this does give users the latest features, this can be a cause of system instability<p>
+            <p>Update your system with <code>sudo pacman -Syu</code>
+            <h2 id="de">Desktop Environments</h2>
             <h3>KDE Plasma</h3>
             <p>KDE is built on the Qt Framework, rather than the more typical GTK framework. Applications of note:
             <table>
